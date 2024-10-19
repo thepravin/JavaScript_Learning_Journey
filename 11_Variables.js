@@ -13,19 +13,19 @@
 /*
     -> typeof let is 'undefined' = Interaction with undeclared and uninitialized variables
     -> we can change value of variable.
-    ->
+    -> data store in script scope ("temporal dead zone")
 */
 // ------------------- const -------------
 /*
     -> typeof const  => give error unexpected tocken "must have to decrear at the time of initilazing"
     -> we can not change value of variable.
-    ->
+    -> data store in script scope ("temporal dead zone")
 */
 // ------------------- var -------------
 /*
     -> typeof var  => give error unexpected tocken "must have to decrear at the time of initilazing"
     -> we can change value of variable.
-    ->
+    -> data store in global scope
 */
 
 // ------------------- var v/s let  -------------

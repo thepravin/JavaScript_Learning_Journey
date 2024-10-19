@@ -1,0 +1,10 @@
+## Memory Creation Phase
+-> at the time of Memory Creation js engin first only find var,let and const
+    keyword.
+-> not read console log.
+-> only assine Memory block with variable name and insert undefined value.
+
+-----------------------------------------------------------------------------
+
+## Code execution Phase
+ -> replace undefined with actual value of variable.

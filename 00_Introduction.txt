@@ -1,0 +1,10 @@
+# What Does defer Do?
+When you add defer to a <script> tag, it tells the browser to load the script in the background while the rest of the page is loading.
+The script will only run after the HTML is fully loaded and parsed. This helps ensure that the JavaScript can safely interact with all the elements on the page.
+
+#If You Don’t Use defer
+If you don’t use defer, the browser will stop loading the page to run the script as soon as it reaches the <script> tag.
+
+#This can lead to two problems:
+Slower Page Load: The page may take longer to display because it pauses to run the script.
+Errors: If your script tries to access elements that haven’t loaded yet, it might not work properly or can cause errors.
