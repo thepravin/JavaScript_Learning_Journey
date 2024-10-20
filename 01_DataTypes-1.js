@@ -5,7 +5,7 @@
 
 // 1. Premitive
 
-//  NaN ==> not a number
+//  NaN ==> not a number (typer of NaN is "number")
 
 // ---------------------- Number --------------------------
 // console.log("9: ", typeof 9);
