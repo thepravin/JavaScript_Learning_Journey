@@ -49,4 +49,6 @@
     ----> let not accessiable outside the box or scope
         ---> give not defined error
         ---> not access befor initilazition give error
+
+    ==-=-=-=> so unlike var, when you use let, a variable with the same name can only be declared once.
 */
