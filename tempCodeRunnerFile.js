@@ -1,1 +1,1 @@
-''+ 100
+dayNumber > 2 && dayNumber < 5
