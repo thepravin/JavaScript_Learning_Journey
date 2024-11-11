@@ -69,7 +69,14 @@ console.log(obj1); // print with updated firstname
     in => used to check key present in object or not
 
     -> syntax = 'keyName' in object_name 
+
+    console.log('firstName' in obj1 ); // true
+    console.log('nickName' in obj1); // false
 */
 
-console.log('firstName' in obj1 ); // true
-console.log('nickName' in obj1); // false
+
+// --------------  hasOwnProperty() -----------------------
+console.log(obj1.hasOwnProperty('firstName')); // true
+
+
+
