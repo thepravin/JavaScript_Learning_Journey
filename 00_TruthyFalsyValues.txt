@@ -1,4 +1,5 @@
--> In JavaScript, "truthy" and "falsy" values refer to how different values are evaluated in a boolean context, such as in conditional statements.
+-> In JavaScript, "truthy" and "falsy" values refer to how different values are evaluated 
+in a boolean context, such as in conditional statements.
 
 
 # Falsy Values :- 

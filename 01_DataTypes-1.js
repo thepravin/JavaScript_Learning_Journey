@@ -1,6 +1,8 @@
 /*
-1. Premitive 
-2. Non Premitive
+1. Premitive  (7)
+2. Non Premitive (1)
+
+Total data Types = 7+1 = 8
 */
 
 // 1. Premitive
