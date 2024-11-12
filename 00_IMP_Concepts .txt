@@ -1,0 +1,7 @@
+
+1) Sperad Operator => (...) => present in shallow and deep copy
+
+2) Optional Chaining => (?.) 
+    -> used in nested objects to sefer access to values
+    -> if value present then return value and if not then return 'undefined'
+    
