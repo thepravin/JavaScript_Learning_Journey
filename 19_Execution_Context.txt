@@ -1,0 +1,41 @@
+
+Highlights
+📦 Execution Context: The concept refers to the environment where JavaScript code is executed.
+🧠 Memory Creation Phase: Variables are allocated memory and initialized to undefined during this phase.
+🔄 Code Execution Phase: Actual code runs, assigning real values to variables and invoking functions.
+🌍 Global vs Local Context: Global context is the default environment, while each function creates its own local context.
+🔄 Call Stack: Tracks execution contexts, allowing for nested function calls and maintaining order of execution.
+⚙️ Function Hoisting: Functions are hoisted, meaning they can be called before their definition within the code.
+
+Key Insights
+📦 Understanding Execution Context: Execution context is crucial for grasping how JavaScript manages code execution and variable scope. It shows the structure of code execution flow and memory handling.
+🧠 Memory Management: The memory creation phase ensures all variables are initialized before code execution, preventing runtime errors from uninitialized variables.
+🔄 Order of Operations: The distinction between the memory creation and code execution phases illustrates the importance of execution order, affecting how variables are accessed and modified.
+🌍 Scope Awareness: Understanding global and local contexts enhances the ability to manage variable accessibility and avoid naming conflicts in larger codebases.
+🔄 Call Stack Mechanics: The call stack is essential for maintaining the order of function execution, allowing for efficient function calls and returns.
+⚙️ Function Hoisting Implications: Hoisting allows for flexible function declarations, simplifying code organization but requiring comprehension of scope to avoid confusion.
+📚 Foundation for Scope: This video lays the groundwork for a deeper understanding of scope, a critical concept for managing variables in JavaScript effectively.
+
+
+
+sayHi()
+
+const username = 'Anurag'
+const userAge = 25
+
+function sayHi() {
+    const a = 14
+    const b = 12
+    add(7, 9)
+}
+
+function add(x, y) {
+    kuchhBhi()
+    return x + y
+}
+
+function kuchhBhi() {
+    console.log('Kuchh bhi');
+}
+
+console.log('Program Ended');
