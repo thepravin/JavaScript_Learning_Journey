@@ -14,7 +14,7 @@ myIntro(); // print all from function.not print undefined due to not store in an
 const returnValue = myIntro();
 console.log(returnValue); // undefined
 */
-//-----------------------------------------------------------------------------------------------
+//----------------------------- 1. Function Declaration  ------------------------------------------------------------------
 
 // "name" is parameter
 function myIntro(name = "Default Parameter (assing when argument not given)") {
@@ -29,4 +29,12 @@ myIntro("Pravin"); // 'pravin' is argument
 myIntro();
 myIntro2();
 
-//--------------------------------------------------------------------------------------------------
+//------------------------------- 2. Function Expression -------------------------------------------------------------------
+
+const sayHi = function(){ // it is anonymous function
+  console.log('Hi');
+}
+
+sayHi();
+
+//------------------------------- 3.  -------------------------------------------------------------------

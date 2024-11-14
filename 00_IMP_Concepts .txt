@@ -5,3 +5,6 @@
     -> used in nested objects to sefer access to values
     -> if value present then return value and if not then return 'undefined'
     
+3) Hosting
+
+4) closure
