@@ -31,10 +31,20 @@ myIntro2();
 
 //------------------------------- 2. Function Expression -------------------------------------------------------------------
 
-const sayHi = function(){ // it is anonymous function
-  console.log('Hi');
-}
+const sayHi = function () {
+  // it is anonymous function
+  console.log("Hi");
+};
 
 sayHi();
 
-//------------------------------- 3.  -------------------------------------------------------------------
+//------------------------------- 3. Arrow Function (ES6)  -------------------------------------------------------------------
+
+const arrowFunction = () => {
+  console.log("Arrow Function !!! ");
+};
+
+const add = (num1, num2) => num1 + num2; // implicit return
+
+console.log("Sum : ", add(2, 3));
+arrowFunction();

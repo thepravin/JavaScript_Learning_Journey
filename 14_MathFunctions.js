@@ -22,3 +22,12 @@ Math.random() * 20; // give 0 to 19 bet in decimal
 Math.floor(Math.random()*20); // give 0 to 29 in integer
 Math.floor(Math.random()*6) + 1 // 1 to 6 integers
 
+//--------------------- Generate Random Whole Numbers within a Range
+// Math.floor(Math.random() * (max - min + 1)) + min
+/*
+// range => 4 to 12
+setInterval(()=>{
+    console.log(Math.floor(Math.random() * (12 - 4 + 1)) + 4 )
+},3000)
+
+*/

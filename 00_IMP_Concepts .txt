@@ -8,3 +8,11 @@
 3) Hosting
 
 4) closure
+
+5) synchronous code => code directly goes into call stack and run.
+6) asynchronous  code => code goes into webapis section and then callback queue and finaly even loop
+    bring back it to call stack and exicute.
+
+7) function vs Methods.
+    
+    
