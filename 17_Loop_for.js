@@ -28,3 +28,19 @@ for (const key in person) {
 const personKeys = Object.keys(person); // array of keys
 const personValues = Object.values(person); // array of values
 const personEntries = Object.entries(person);
+
+//--------------------- for each  --------------------------------
+/*
+
+-> only return undefined, nothing return anything not matter you use or not
+  return keyword.
+  
+fruits.forEach((fruit) => {
+  console.log(fruit);
+});
+
+console.log(fruits.forEach((fruit) => {
+  console.log(fruit);
+  return fruit.toUpperCase();
+}))
+*/
