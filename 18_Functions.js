@@ -48,3 +48,9 @@ const add = (num1, num2) => num1 + num2; // implicit return
 
 console.log("Sum : ", add(2, 3));
 arrowFunction();
+
+
+// ----------------------------------- 4. Immediately Invoked Function Expression (IIFE) ---------------------
+(function(){
+  console.log("IIFE function expression !!!!");
+})();

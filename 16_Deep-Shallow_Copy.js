@@ -104,6 +104,8 @@ console.log(myFruits);
     => In deep copy use JSON. (read about it.....)
     => syntax -> JSON.parse(JSON.stringify(object_name));
     => create two different copy of every nested obect or array.
+        >>> JSON.stringify(object) => convert object into string link fortmat
+        >>> JSON.parse(object_string) => convert onbject string into object.
 
     const info = {
         firstName : 'pravin',

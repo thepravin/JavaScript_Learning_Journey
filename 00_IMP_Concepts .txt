@@ -15,4 +15,10 @@
 
 7) function vs Methods.
     
-    
+8) Event Bubbling and Event Capturing.
+    -> when you click on child event then it go like a wave (stone throw in water)
+        means ; jab ham child pe click karte hai tab wo event uspe hi nahi uske parent par bhi call hota hai upto document , window and then stop.
+
+9) Event Delegation.
+    -> Avoiding adding evenlistner on every new child element and apply only on
+       parent div. 

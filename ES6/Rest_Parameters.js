@@ -3,7 +3,7 @@
      but rest params (not operator) collect and make array
 
      -> rest param must be last in parameter list [in function (parameters)]
-
+       rest parameter for function parameters.
 */
 
 const num1 = [1, 2, 3, 4, 5];
