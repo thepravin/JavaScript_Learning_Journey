@@ -1,4 +1,5 @@
 //------------------ Map ----------------------
+//-> Map method is used on arrays to transform each element in the array and return a new array with the results.
 //  -> map return array
 // -> non distructive method.
 
@@ -50,6 +51,8 @@ console.log(
 * accumulator *
 The value resulting from the previous call to callbackFn. 
 On the first call, its value is initialValue if the latter is specified; otherwise its value is array[0].
+
+=> accumulator, which gets assigned the return value of the callback function from the previous iteration.
 
 * currentValue *
 The value of the current element. 

@@ -25,7 +25,7 @@
 /*
     -> typeof var  => give error unexpected tocken "must have to decrear at the time of initilazing"
     -> we can change value of variable.
-    -> data store in global scope
+    -> data store in global scope / function scope
 */
 
 // ------------------- var v/s let  -------------

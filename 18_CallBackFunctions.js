@@ -6,9 +6,15 @@
 * ** Higher order function **
  => A higher-order function in JavaScript is a function that 
   uses another function as an argument.
-  eg: map,filter.
+  eg: map,filter,reduce,sort.
 
-  => function return another function is also higher order funciton.
+  => function return another function like variable is also higher order funciton.
+
+  => When functions are passed in to or returned from another function, then those functions 
+     which were passed in or returned can be called a lambda.
+
+  => Functions that can be assigned to a variable, passed into another function, or returned from another function just like any other normal value,
+   are called first class functions.
   
 */
 

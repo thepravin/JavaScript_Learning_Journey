@@ -2,7 +2,7 @@
 
 const arr = [2, 4, 6, 8, 10];
 
-// --------- shift() -----------
+//* --------- shift() -----------
 /*
     -> syntax => arrName.shift();
     -> shift number to left side or front side (remove left first element);
@@ -12,7 +12,7 @@ const arr = [2, 4, 6, 8, 10];
     console.log(arr);
 */
 
-// --------------- unShift() -----------
+//* --------------- unShift() -----------
 /*
     -> syntax => arrName.unshift(value);
     -> add element at front side
@@ -22,7 +22,7 @@ const arr = [2, 4, 6, 8, 10];
     console.log(arr)
 */
 
-//------------- concat() -----------
+//*------------- concat() -----------
 /*  
     -> syntax => arr1.concat(arr2)
     -> connect tow arrays.    
@@ -33,7 +33,7 @@ const arr = [2, 4, 6, 8, 10];
     console.log(arr3); // print same concat array (first arr2 elements then arr elements)
 */
 
-// ------------- indexOf() ---------
+// *------------- indexOf() ---------
 /*
     -> syntax => arrName.indexOf(value)
     -> give the index of value
@@ -43,7 +43,7 @@ const arr = [2, 4, 6, 8, 10];
     console.log(arr.indexOf(4));
 */
 
-// ------------- includes() -------
+//* ------------- includes() -------
 /*
     -> syntax => arrName.includes(value)
     -> if present give true else false
@@ -51,7 +51,7 @@ const arr = [2, 4, 6, 8, 10];
     console.log(arr.includes(4));
 */
 
-// ------------- reverse() -----------
+//* ------------- reverse() -----------
 /*
     -> reverse array
     -> change in prsent array not return new array.
@@ -59,7 +59,7 @@ const arr = [2, 4, 6, 8, 10];
     console.log(arr.reverse());
 */
 
-// -------------- sort() -------------
+//* -------------- sort() -------------
 /*
     -> sort asper alphabetical( UTF-16 code differnt for uppercase and lower case) order and in number first all numbers start form 1 then 2 ....
     -> mostly used for sorting string
@@ -69,9 +69,28 @@ const arr = [2, 4, 6, 8, 10];
     console.log(sortThis.sort());
     sortThis = ["pravin","bat","apple"];
     console.log(sortThis.sort());
+
+
+    function ascendingOrder(arr) {
+  return arr.sort(function(a, b) {
+    return a - b;
+  });
+}
+ascendingOrder([1, 5, 2, 3, 4]); // [1, 2, 3, 4, 5]
+
+
+function reverseAlpha(arr) {
+  return arr.sort(function(a, b) {
+    return a === b ? 0 : a < b ? 1 : -1;
+  });
+}
+reverseAlpha(['l', 'h', 'z', 'b', 's']); // ['z', 's', 'l', 'h', 'b']
+
+
+
 */
 
-// --------------- slice() ------------
+//* --------------- slice() ------------
 /*
     -> syntax => arrayName.slice(start_index , end_index)
     -> include start_index value but exclude end_index value
@@ -81,7 +100,7 @@ const arr = [2, 4, 6, 8, 10];
     console.log(arr.slice(1,4));
 */
 
-// ------------- splice() ------------
+//* ------------- splice() ------------
 /*
     -> syntax => arrayName.splice(start_index  , countOfElements_to_delete , add_new_value ....)
     -> return delete or removed value array.
@@ -99,4 +118,24 @@ const arr = [2, 4, 6, 8, 10];
     const demo = [1,2,3,4,5,8,9,6];
     demo.splice(0,0,'pravin','ganesh',7757946945);
     console.log(demo)
+*/
+
+//*----------- entries() --------------------
+
+/* 
+        The entries() method of Array instances 
+        returns a new array iterator object that contains the key/value pairs for each index in the array.
+
+ const array1 = ['a', 'b', 'c'];
+
+const iterator1 = array1.entries();
+
+console.log(iterator1.next().value);
+// Expected output: Array [0, "a"]
+
+console.log(iterator1.next().value);
+// Expected output: Array [1, "b"]
+
+-> access values like iterator1.next().value[1]
+
 */

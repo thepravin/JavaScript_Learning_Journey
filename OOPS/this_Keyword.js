@@ -1,5 +1,8 @@
 /*
     -> this refer to object or function which it call
+
+    -> where this refers to the object that the method is attached to, 
+     thus allowing the same method to be reused on different objects.
 */
 
 //*----------  Normal Funciton

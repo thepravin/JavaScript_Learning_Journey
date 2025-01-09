@@ -77,7 +77,7 @@ console.log(lastFourDigit.padEnd(12,'*'));
     => return char ascii code at give position
 */
 
-/* ----------->>> split()
+/* //* ----------->>> split()
     => return array string in array elemet.
     => wiht only ('') split each char.
     => with space (' ') split each word into array element.
@@ -85,5 +85,29 @@ console.log(lastFourDigit.padEnd(12,'*'));
     console.log(sentence.split());
     console.log(sentence.split(''));
     console.log(sentence.split(' '));
+
+
+    function splitify(str) {
+    return str.split(/\W/);  // regular expression
+  }
+
+splitify("Hello World,I-am code"); // "Hello", "World", "I", "am", "code"
+
+
 */
 
+
+//* --------------- join()-------------------
+/* 
+        -> The join method is used to join the elements of an array together to create a string. 
+        It takes an argument for the delimiter that is used to separate the array elements in the string.
+
+        function sentensify(str) { 
+
+         return str.split('-').join(" ")
+ 
+       }
+
+
+console.log(sentensify("May-the-force-be-with-you"))
+*/

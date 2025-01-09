@@ -1,0 +1,72 @@
+
+
+[Reffer 18_callBackFunction file.....................]
+
+
+
+you call a function on a variable, array, or an object, and the function changes the variable or 
+something in the object.
+
+One of the core principles of functional programming is to not change things.
+Changes lead to bugs. It's easier to prevent bugs knowing that your functions don't change anything,
+including the function arguments or any global variable.
+
+
+ functional programming, changing or altering things is called mutation, and the outcome is called a side effect. 
+ A function, ideally, should be a pure function, meaning that it does not cause any side effects.
+
+ //-------------------------------------------
+ When the callback is used, it is passed three arguments. The first argument is the current element being processed. 
+ The second is the index of that element and the third is the array upon which the map method was called.
+
+ make own map() function
+ https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/functional-programming/implement-map-on-a-prototype
+
+
+ The callback function is called with three arguments:
+this[i] - The current element of the array.
+i - The index of the current element.
+this - The original array itself.
+The result of the callback is pushed into newArray.
+
+// code ---------------------------------
+Array.prototype.myMap = function(callback) {
+    const newArray = [];
+    console.log(this)
+    console.log(callback)
+   
+    for (let i = 0; i < this.length; i++) {
+      newArray.push(callback(this[i], i, this));
+    }
+  
+    return newArray;
+  };
+
+  [23, 65, 98, 5, 13].myMap(item => item * 2)
+
+  //------------------------------------------------
+
+
+  // ------------- Make own filter() --------------------------
+
+  filter calls a function on each element of an array and returns a new array containing only the elements 
+  for which that function returns a truthy value - that is, a value which returns true if passed to 
+  the Boolean() constructor.
+
+  Array.prototype.myFilter = function(callback) {
+  const newArray = []; 
+  for(let i=0;i<this.length;i++){
+    if(Boolean(callback(this[i],i,this))===true){
+     newArray.push(this[i]);
+    }
+  }
+
+  [23, 65, 98, 5, 13].myFilter(item => item % 2)
+
+
+
+  //--------------------- Higher Order function -----------
+  map()
+  filter()
+  reduce()
+  sort()
