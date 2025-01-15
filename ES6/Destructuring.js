@@ -5,8 +5,11 @@ const [r, g, y, p, b] = colors; // in array destructuring give any name. sequenc
 // console.log(g);
 // console.log(p);
 
+//*  Array's are also a object so, do object destructuring like follows... */
 const { 3: color4 } = colors; // (index: name(any name) )
+const [,,,color5] = colors;
 // console.log(color4); // pink
+// console.log(color5) // pink
 
 //----------------------------------------------------------------
 

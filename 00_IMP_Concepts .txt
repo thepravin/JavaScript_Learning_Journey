@@ -24,3 +24,10 @@
        parent div. 
 
 10) export default is used to declare a fallback value for a module or file, you can only have one value be a default export in each module or file. Additionally, you cannot use export default with var, let, or const
+
+
+
+11) Way's of creating the objects ?
+    -> using factory function
+    -> using constructor function
+    

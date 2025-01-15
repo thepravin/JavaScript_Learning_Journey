@@ -9,6 +9,9 @@
     ->> In switch case order not matter.
 
     ->> In case ~ we can add conditions also.
+
+    Q. When the switch statement matches the expression with the given labels, how is the comparison done?
+    ==> Both the datatype and the result of the expression are compared.
 */
 
 const dayNumber = 2;
@@ -31,7 +34,6 @@ switch (dayNumber) {
     console.log("Please Enter valid day Number !!!");
 }
 console.log("----------------------------------------------");
-
 
 const age = 18;
 
