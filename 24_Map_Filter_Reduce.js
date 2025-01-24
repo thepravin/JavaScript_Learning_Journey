@@ -1,4 +1,4 @@
-//------------------ Map ----------------------
+//*------------------ Map ----------------------
 //-> Map method is used on arrays to transform each element in the array and return a new array with the results.
 //  -> map return array
 // -> non distructive method.
@@ -13,7 +13,7 @@ console.log(
 );
 */
 
-//------------------------------------ filter ------------------------
+//*------------------------------------ filter ------------------------
 //  -> filter return array (return only that value which is true)
 // -> non distructive method.
 
@@ -40,7 +40,7 @@ console.log(
 );
 */
 
-// ------------------------------ Reduce ----------------------
+//* ------------------------------ Reduce ----------------------
 /* 
     -> REDUCE , reduce the all values of array into one value.
     -> syntas => 

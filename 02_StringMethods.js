@@ -1,10 +1,10 @@
 let name1 = "Pravin";
 let sentence = "  Hellow my name is Pravin   ";
 
-//--------------- Property ------------------
+//*--------------- Property ------------------
 // console.log(name1.length);
 
-//------------------- Methods or functions ---------------
+//*------------------- Methods or functions ---------------
 
 /* 
 console.log(name1.toUpperCase());
@@ -16,7 +16,7 @@ console.log(name1.toLowerCase());
 // .trimStart() => remove start space not end
 // .trimEnd() => remove end space not start
 
-/* ----------->>>  include() 
+/* //* ----------->>>  include() 
 => check present or not and return boolean vlaue
 console.log(
   "include() : 'mY :'",
@@ -27,31 +27,31 @@ console.log(
 
 */
 
-/* ----------->>>  indexOf() 
+/* //*----------->>>  indexOf() 
 => give index of first char
 => if char not present then give "-1"
 console.log(sentence.indexOf('m'));
 */
 
-/* ----------->>> replace()
+/* //*----------->>> replace()
 => replace(kisko_replace_karna_hai , kise_replace_karna_hai);
 => replace only one char or word
 
 console.log(sentence.replace('Hellow','Hi'));
 */
 
-/* ----------->>> replaceAll()
+/* //*----------->>> replaceAll()
 => replace(kisko_replace_karna_hai , kise_replace_karna_hai);
 => replace all char or word
 
 console.log(sentence.replaceAll('a','A'));
 */
 
-/* ----------->>> conccat()
+/* //*----------->>> conccat()
 console.log(sentence.concat("Welcome Home !!! "," Happy Coding"));
 */
 
-/* ----------->>> padStart()
+/*//* ----------->>> padStart()
 => generates a new string of a specified length by adding a given padding string to the beginning of the original string.
 => .padStart(how_many_char_string_you_want_at_final , 'string_you_wnat_to_append')
 
@@ -60,7 +60,7 @@ const lastFourDigit = '8283';
 console.log(lastFourDigit.padStart(12,'*'));
 */
 
-/* ----------->>> padEnd()
+/* //*----------->>> padEnd()
 => generates a new string of a specified length by adding a given padding string to the end of the original string.
 => .padEnd(how_many_char_string_you_want_at_final , 'string_you_wnat_to_append')
 
@@ -69,11 +69,11 @@ const lastFourDigit = '8283';
 console.log(lastFourDigit.padEnd(12,'*'));
 */
 
-/* ----------->>> charAt()
+/* //*----------->>> charAt()
     => return char at give position
 */
 
-/* ----------->>> charCodeAT()
+/* //*----------->>> charCodeAT()
     => return char ascii code at give position
 */
 

@@ -1,4 +1,4 @@
-// --------------->> equal to (equality) "==" 
+// *--------------->> equal to (equality) "==" 
 // -> only check value [it does implicit conversion (automatic)].
 /*
 const user1 = 15;
@@ -9,7 +9,7 @@ const num2 = '15';
 console.log(num1 == num2); // true
 */
 
-// --------------->> "==="  equal value and equal type (strict equality) 
+//* --------------->> "==="  equal value and equal type (strict equality) 
 // -> You have to do explicit (manual) conversion to compare.
 /*
 const user1 = 12; // number
@@ -20,7 +20,7 @@ const user3 = 12;
 console.log(user1 === user3); // true
 */
 
-// --------------->> Not equl "!="
+//* --------------->> Not equl "!="
 // -> "true" when two numbers are not equal.
 //-> same as equal convert type
 /*

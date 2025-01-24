@@ -1,8 +1,7 @@
 /* 
 * Async *
 -> Async and Await in JavaScript is used to simplify handling asynchronous operations using promises.
--> Async functions always return promise.if a value is returned that is not a promise, JavaScript automatically 
-   wraps it in a resolved promise.
+-> Async functions always return promise.if a value is returned that is not a promise, JavaScript automatically wraps it in a resolved promise.
 
 * Await *
 -> await used to wait for a promise to resolve.

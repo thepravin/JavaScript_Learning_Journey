@@ -61,3 +61,15 @@ async function main() {
 }
 
 main();
+
+//*================================================
+const magicObject = { a: 1, b: 2 };
+
+const transform = (obj) => {
+  obj.a = 3;
+  return { ...obj, b: 4 };
+};
+
+const newObject = transform(magicObject);
+
+console.log(magicObject, newObject);

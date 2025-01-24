@@ -25,14 +25,11 @@ console.log(user2);
 console.log(user1); // user1 object also change 'Pravin' to 'Ganesh'
 */
 
-// ------------------------------ Shallow copy  ----------------------------------------------------------
+//* ------------------------------ Shallow copy  -------------------
 
 /* 
     -> sperad operator , object.assign() , concat, slice do shallow copy.
-    -> in one object ther is another more objects or arrays then sperad 
-        operator creat only new copy of one object which is mejor not nested
-        object or array. They share same memory and if chage does in one place then
-        it happen to another place also.
+    -> A shallow copy creates a new object or array, but only copies the first level of properties or elements. If the original data contains nested objects or arrays, the references to those nested objects are copied, not their actual content.
 
         const info = {
     firstName : 'pravin',
@@ -54,7 +51,6 @@ console.log("info2 : ",info2);
 console.log("info : ",info);
 
 */
-
 
 // Method 1 : (not use mostly in current time)
 /*
@@ -98,9 +94,10 @@ console.log(fruits);
 console.log(myFruits);
 */
 
-//----------------------------------- Deep Copy --------------------------------------------------
+//*----------------------------------- Deep Copy ------------------------*
 
-/*
+/*  
+    => A deep copy creates a new object or array and recursively copies all levels of data, including nested objects or arrays. This ensures that the copied data is entirely independent of the original.
     => In deep copy use JSON. (read about it.....)
     => syntax -> JSON.parse(JSON.stringify(object_name));
     => create two different copy of every nested obect or array.
@@ -125,4 +122,18 @@ console.log(myFruits);
     info2.subject.push('chemistry');
     console.log("info2 : ",info2);
     console.log("info : ",info); 
+
+//*-----------------------------------------------------------------
+
+const original = { name: "Alice", address: { city: "New York" } };
+const deepCopy = structuredClone(original);
+
+deepCopy.address.city = "Los Angeles";
+
+console.log(original); // Output: { name: "Alice", address: { city: "New York" } }
+console.log(deepCopy); // Output: { name: "Alice", address: { city: "Los Angeles" } }
+
+/* 
+The structuredClone method creates a deep copy of the object, so deepCopy is entirely independent of original.
+
 */
