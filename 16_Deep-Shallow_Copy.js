@@ -31,26 +31,28 @@ console.log(user1); // user1 object also change 'Pravin' to 'Ganesh'
     -> sperad operator , object.assign() , concat, slice do shallow copy.
     -> A shallow copy creates a new object or array, but only copies the first level of properties or elements. If the original data contains nested objects or arrays, the references to those nested objects are copied, not their actual content.
 
-        const info = {
-    firstName : 'pravin',
-    lastName : 'nalawade',
-    patta : {
-        city : 'karad',
-        pincode : 415124
-    },
-    subject : ['math','physics']
-}
+const info = {
+        firstName: "pravin",
+        lastName: "nalawade",
+        patta: {
+            city: "karad",
+            pincode: 415124,
+        },
+        subject: ["math", "physics"],
+    };
 
-console.log("info :",info)
+console.log("info :", info);
 
-const info2 = {...info};
+const info2 = { ...info };
 
-info2.patta.city = 'tuljapur';
-info2.subject.push('chemistry');
-console.log("info2 : ",info2);
-console.log("info : ",info);
+info2.patta.city = "tuljapur";
+info2.subject.push("chemistry");
+info2.firstName = "Ganesh";    // changes in first level values not affected (deep copy)
+console.log("info2 : ", info2);
+console.log("info : ", info);
+    
+    */
 
-*/
 
 // Method 1 : (not use mostly in current time)
 /*

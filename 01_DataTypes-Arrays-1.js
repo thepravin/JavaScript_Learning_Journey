@@ -60,3 +60,4 @@ newArray.firstName = 'Pravin';
 newArray.age = 21;
 
 console.log(newArray)
+console.log(newArray.firstName)

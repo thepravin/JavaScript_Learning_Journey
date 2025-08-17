@@ -27,7 +27,7 @@ for (const key in person) {
 
 const personKeys = Object.keys(person); // array of keys
 const personValues = Object.values(person); // array of values
-const personEntries = Object.entries(person);
+const personEntries = Object.entries(person);// [[key,value],[]...]
 
 //--------------------- for each  --------------------------------
 /*
